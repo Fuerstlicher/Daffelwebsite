@@ -1,0 +1,246 @@
+/* ====== BASISLAYOUT ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: #5e5b5b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ====== HERO ====== */
+.hero {
+    background: url('pictures/familie.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+/* ====== SEKTIONEN ====== */
+.section {
+    padding: 40px 0;
+}
+
+.bg-light {
+    background: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ====== KONTAKT ====== */
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ====== RESPONSIV ====== */
+@media (min-width: 768px) {
+    .header-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* ====== LOGO & TITEL ====== */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Abstand zwischen Logo und Titel */
+}
+
+.logo {
+    height: 50px; /* Höhe des Logos – anpassbar */
+    width: auto;  /* Proportionen beibehalten */
+}
+
+/* ====== Buttons ====== */
+.btn {
+    background: #e67e22; /* Orange passend zum Header */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #cf711f;
+}
+
+/* ====== Infobox ====== */
+.infobox {
+    background: #ffe0e0; /* Helles Rose */
+    border: 2px solid #e62222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.infobox h3 {
+    margin-top: 0;
+}
+
+/* ===== Einheitlicher Buttonstil ===== */
+.whatsapp-btn,
+.threema-btn,
+.email-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn .icon,
+.threema-btn .icon,
+.email-btn .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* WhatsApp Farben */
+.whatsapp-btn {
+    background-color: #25D366;
+}
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* E-Mail Farben */
+.email-btn {
+    background-color: #91a4e0;
+}
+.email-btn:hover {
+    background-color: #698cec;
+}
+
+/*Threema Farben */
+.threema-btn {
+    background-color: #3a3a3a;
+}
+.threema-btn:hover {
+    background-color: #2a2a2a;
+}
+
+
+/* ====== Navigation ====== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e67e22; /* Standard Orange */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #cf711f;
+    transform: translateY(-2px);
+}
